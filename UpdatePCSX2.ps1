@@ -47,9 +47,12 @@ if (Test-Path ($runFolder + '\version.ini')) {
 if ($currentVersion -ne $newVersion) {
     DownloadAndExtractNewVersion -DownloadUrl $downloadUrl -Version $newVersion
     Write-Host 'PCSX2 updated'
+    Write-Host 'Prevously installed version version: '$currentVersion 
+    Write-Host 'Current version: '$newVersion 
 }
 else {
     Write-Host 'PCSX2 already up to date'
+    Write-Host 'Current version: '$currentVersion 
 }
 
 Read-Host
