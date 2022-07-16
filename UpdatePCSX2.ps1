@@ -1,7 +1,7 @@
 #Define PCSX2 path, repo url and version needed
 $runFolder = Split-Path $MyInvocation.MyCommand.Path -Parent
 $githubUrl = 'https://api.github.com/repos/PCSX2/pcsx2/releases'
-$releaseType = '*' + '64bit-AVX2.7z'
+$releaseType = '*' + '64bit-AVX2-wxWidgets.7z'
 
 function DownloadAndExtractNewVersion {
     param ([string]$DownloadUrl, [string]$Version)
